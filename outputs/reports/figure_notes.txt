@@ -1,0 +1,35 @@
+Figure notes and tabulated values
+=================================
+
+purpose
+-------
+  Figures carry no in-panel numbers. Values that would otherwise be
+  printed inside an axes are recorded here; every panel is also
+  available as CSV under outputs/data.
+
+figure 4, gas-holding fraction
+------------------------------
+  H = 0.5: dip 17.5, 12.6, 9.0, 6.4 deg -> 18.0, 23.2, 28.1, 32.6 %
+  H = 0.8: dip 9.0, 7.9, 6.8, 6.0 deg -> 14.1, 16.5, 18.8, 21.3 %
+
+figure 5, one diver holding station 10 min
+------------------------------------------
+  silt released in section (g): 0 deg 130, 3 deg 149, 6 deg 123, 10 deg 63
+  up-dip offset of silt (m), median: 0 deg 0.82, 3 deg 2.81, 6 deg 3.21, 10 deg 2.82
+  gas leaving the section (%): 0 deg 0, 3 deg 0, 6 deg 47, 10 deg 94
+
+figure 6, team position
+-----------------------
+  team of four, silt by position (g), RMV 20: 121.1, 52.4, 34.1, 27.3
+  team of four, silt by position (g), RMV 40: 144.3, 58.4, 39.1, 30.8
+  total by team size 1..4 (g), RMV 20: 122.4, 172.3, 210.1, 239.6
+  total by team size 1..4 (g), RMV 40: 144.4, 201.4, 243.1, 274.0
+
+figure 7, sighting range toward the exit (m, medians)
+-----------------------------------------------------
+  minutes |    15 |    29 |    45 |    59 |    89
+  eye team3       |  27.7 |  23.6 |  15.7 |  10.5 |   6.9
+  eye team3_rmv40 |  27.3 |  22.6 |  13.3 |   9.2 |   6.0
+  eye hover5      |  29.0 |  27.0 |  23.0 |  18.9 |  10.9
+  top 0.1 m team3   |  0.48 |  0.73 |  0.99 |  1.16 |  1.56
+

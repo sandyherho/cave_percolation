@@ -1,0 +1,59 @@
+Numerical verification
+======================
+
+independent algorithms
+----------------------
+  The event-driven fill-spill engine and the priority-flood filling
+  share no code path. The connected limit is checked against exact
+  percolation results, the gradient limit against the exact finger
+  exponent, the pool geometry against the closed-form exponents, one
+  dome against its exact area, and the Lagrangian settling against the
+  exact residence time.
+
+measured residuals and exponents
+--------------------------------
+  fill-spill vs priority flood, max abs (m) ........... 0.000e+00
+    cells compared / cells with gas ................... 147456 / 27086
+  volume residual, max over 20 000 events ............. 5.923e-15
+  dome relerr_V001: errors 1.63e-02, 1.28e-02, 1.35e-03, 5.93e-04; orders 0.34, 3.25, 1.18
+  dome relerr_V005: errors 1.44e-02, 2.27e-03, 6.94e-04, 3.36e-04; orders 2.67, 1.71, 1.05
+  dome relerr_V02: errors 9.80e-03, 2.06e-03, 5.89e-04, 2.32e-04; orders 2.25, 1.81, 1.35
+  IP cluster dimension (exact 1.8958) ................. 1.8777 [1.8470, 1.9070]
+  IP acceptance half-density (p_c 0.5927) ............. 0.5883
+  gradient finger exponent (exact -0.5714) ............ -0.5782 [-0.5953, -0.5620]
+  relief Hurst fit, input H = 0.5 ..................... 0.5113
+  relief Hurst fit, input H = 0.8 ..................... 0.7672
+  pool V ~ A^x, H = 0.5 (x = 1.250) ................... 1.3044 [1.2924, 1.3159]
+  pool V ~ A^x, H = 0.8 (x = 1.400) ................... 1.4354 [1.4164, 1.4552]
+  point source A ~ V^x, H = 0.5 (x = 0.800) ........... 0.7840 [0.7447, 0.8202]
+  point source A ~ V^x, H = 0.8 (x = 0.714) ........... 0.7270 [0.6905, 0.7647]
+
+residence time, relative error (two standard errors)
+----------------------------------------------------
+  Pe      | dt002T | dt0005T | dt000125T
+     0.10 | +16.56 +/- 1.33 % |  +8.15 +/- 1.23 % |  +3.97 +/- 1.19 %
+     0.32 | +17.64 +/- 1.32 % |  +8.15 +/- 1.23 % |  +3.27 +/- 1.17 %
+     1.00 | +13.59 +/- 1.21 % |  +5.78 +/- 1.14 % |  +3.62 +/- 1.11 %
+     3.16 |  +8.42 +/- 0.97 % |  +3.01 +/- 0.92 % |  +0.75 +/- 0.91 %
+    10.00 |  +5.30 +/- 0.62 % |  +2.76 +/- 0.62 % |  +1.43 +/- 0.61 %
+    31.62 |  +3.49 +/- 0.36 % |  +1.51 +/- 0.35 % |  +0.91 +/- 0.36 %
+   100.00 |  +2.40 +/- 0.20 % |  +0.82 +/- 0.20 % |  +0.42 +/- 0.20 %
+
+reading these numbers
+---------------------
+  The priority-flood agreement is exact to rounding. The dome
+  converges at roughly second order until the error reaches the
+  pixelation floor of the contact line. The relief exponent for H =
+  0.8 is about 0.77 because the spectral synthesis is cut off at the
+  lattice scale. The pool volume-area exponents exceed the closed form
+  by 3 to 4 percent and their intervals exclude it; the point-source
+  exponents contain it. The IP acceptance density falls to half
+  slightly below p_c, a finite-size effect of stopping at the lattice
+  edge. The residence-time error is a positive bias from detecting
+  floor crossings only at step ends; it halves when the step falls by
+  four, as expected for an O(sqrt(dt)) boundary bias. Production runs
+  use dt = 2 s, which is 1.06e-05 to 1.47e-02 of the class residence
+  times, well inside the smallest tested ratio for fine grains and
+  near 0.02 T for the coarsest class, whose floor arrival may be late
+  by a few percent.
+

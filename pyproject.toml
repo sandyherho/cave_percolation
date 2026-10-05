@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cave_percolation"
+version = "0.1.0"
+description = "Exhaled-gas percolation and silt fallout under rough cave ceilings"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Sandy H. S. Herho" },
+]
+keywords = ["cave diving", "invasion percolation", "fill-spill",
+            "self-affine roughness", "sediment", "underwater visibility"]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "matplotlib>=3.7",
+    "pillow>=10.0",
+]
+
+[project.optional-dependencies]
+lint = ["pycodestyle>=2.11", "pydocstyle>=6.3"]
+
+[tool.setuptools]
+packages = ["cave_percolation"]
+
+[tool.pydocstyle]
+convention = "pep257"

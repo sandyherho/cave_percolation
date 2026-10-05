@@ -1,0 +1,62 @@
+Symbols, units, and reference values
+====================================
+
+units
+-----
+  Lengths in meters, times in seconds, silt mass in grams, gas volume
+  in cubic meters (liters where stated), concentration in g m^-3 =
+  mg/L, sighting range in meters. +x is up-dip.
+
+reference values (illustrative, not calibrated)
+-----------------------------------------------
+  rho = 1000.0 kg m^-3, g = 9.81 m s^-2, gamma = 0.072 N m^-1, mu = 0.001 Pa s
+  rho_s = 2650.0 kg m^-3 (quartz density)
+  lattice a = 0.02 m, passage 12.8 m x 3.2 m (640 x 160 cells), ceiling to floor 2.0 m
+  relief: H = 0.8, sigma1 = 0.1 m (rms height difference at 1 m), arch 0.15 m, dip 2.0 deg
+  pinning radius median 4 mm, log-sd 0.5; median pinning height 3.67 mm; capillary length 2.71 mm
+  grid Bond number sigma(a)/ell_med = 1.19
+  diver: RMV 20.0 L/min, breathing period 4.0 s, exhalation 1.6 s, speed 0.2 m/s, spacing 20.0 s
+  regulator 0.8 m below a ceiling at 20.0 m depth; gas per breath at the ceiling 1.369 L; footprint rms 0.12 m; 40 parcels per breath
+  silt: m0 = 50.0 g m^-2, phi_c = 0.5, v_d = 2 mL
+  water: K = 1e-05 m^2 s^-1, current 0.0 m/s, clear-water sighting 30.0 m, eye 0.7 m below ceiling
+  grain size log-normal, median 8.0 um, log-sd 1.0
+  ensembles use seeds (11, 23, 37, 41, 53, 67, 79, 83, 97, 101, 113, 127)
+
+size classes
+------------
+  d (um) | w (mm/s) | b (m2/g) | mass frac | fall 0.7 m (min)
+  --------------------------------------------------------------
+    1.00 |   0.0009 |   1.1321 |    0.0248 |    12973.8
+    1.26 |   0.0014 |   0.8985 |    0.0168 |     8173.0
+    1.59 |   0.0023 |   0.7132 |    0.0250 |     5148.6
+    2.00 |   0.0036 |   0.5660 |    0.0353 |     3243.4
+    2.52 |   0.0057 |   0.4493 |    0.0473 |     2043.2
+    3.17 |   0.0091 |   0.3566 |    0.0601 |     1287.2
+    4.00 |   0.0144 |   0.2830 |    0.0724 |      810.9
+    5.04 |   0.0228 |   0.2246 |    0.0827 |      510.8
+    6.35 |   0.0363 |   0.1783 |    0.0896 |      321.8
+    8.00 |   0.0576 |   0.1415 |    0.0920 |      202.7
+   10.08 |   0.0914 |   0.1123 |    0.0896 |      127.7
+   12.70 |   0.1450 |   0.0891 |    0.0827 |       80.4
+   16.00 |   0.2302 |   0.0708 |    0.0724 |       50.7
+   20.16 |   0.3654 |   0.0562 |    0.0601 |       31.9
+   25.40 |   0.5801 |   0.0446 |    0.0473 |       20.1
+   32.00 |   0.9208 |   0.0354 |    0.0353 |       12.7
+   40.32 |   1.4617 |   0.0281 |    0.0250 |        8.0
+   50.80 |   2.3204 |   0.0223 |    0.0168 |        5.0
+   64.00 |   3.6833 |   0.0177 |    0.0107 |        3.2
+   80.63 |   5.8469 |   0.0140 |    0.0065 |        2.0
+  101.59 |   9.2814 |   0.0111 |    0.0037 |        1.3
+  128.00 |  14.7333 |   0.0088 |    0.0039 |        0.8
+
+provenance
+----------
+  Physical constants are standard values for fresh water and quartz.
+  The ceiling relief, the pinning radius, the loose silt inventory m0,
+  the detachment constants phi_c and v_d, the grain size distribution,
+  and the eddy diffusivity K are not measured on a cave ceiling to the
+  authors' knowledge; they are round values in a plausible range. The
+  respiratory minute volume is a typical working value for a swimming
+  diver. Every silt and sighting result scales with m0 and depends on
+  K and phi_c, v_d; see sensitivity.txt.
+

@@ -1,0 +1,40 @@
+References (DOIs checked against Crossref)
+==========================================
+
+percolation
+-----------
+  Wilkinson D, Willemsen JF (1983) Invasion percolation: a new form
+    of percolation theory. J Phys A 16:3365.
+    https://doi.org/10.1088/0305-4470/16/14/028
+  Newman MEJ, Ziff RM (2000) Efficient Monte Carlo algorithm and
+    high-precision results for percolation. Phys Rev Lett
+    85:4104. https://doi.org/10.1103/PhysRevLett.85.4104
+  Birovljev A, Furuberg L, Feder J, Jossang T, Maloy KJ, Aharony A
+    (1991) Gravity invasion percolation in two dimensions:
+    experiment and simulation. Phys Rev Lett 67:584.
+    https://doi.org/10.1103/PhysRevLett.67.584
+  Meakin P, Feder J, Frette V, Jossang T (1992) Invasion
+    percolation in a destabilizing gradient. Phys Rev A 46:3357.
+    https://doi.org/10.1103/PhysRevA.46.3357
+  Wagner G, Meakin P, Feder J, Jossang T (1997) Buoyancy-driven
+    invasion percolation with migration and fragmentation.
+    Physica A 245:217.
+    https://doi.org/10.1016/S0378-4371(97)00324-5
+
+depressions, roughness, detachment, optics
+------------------------------------------
+  Barnes R, Callaghan KL, Wickert AD (2021) Computing water flow
+    through complex landscapes, Part 3: Fill-Spill-Merge. Earth
+    Surf Dynam 9:105. https://doi.org/10.5194/esurf-9-105-2021
+  Candela T, Renard F, Klinger Y, Mair K, Schmittbuhl J,
+    Brodsky EE (2012) Roughness of fault surfaces over nine
+    decades of length scales. J Geophys Res 117:B08409.
+    https://doi.org/10.1029/2011JB009041
+  Sharma P, Flury M, Zhou J (2008) Detachment of colloids from a
+    solid surface by a moving air-water interface. J Colloid
+    Interface Sci 326:143.
+    https://doi.org/10.1016/j.jcis.2008.07.030
+  Zaneveld JRV, Pegau WS (2003) Robust underwater visibility
+    parameter. Opt Express 11:2997.
+    https://doi.org/10.1364/OE.11.002997
+

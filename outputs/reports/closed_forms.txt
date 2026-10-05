@@ -1,0 +1,80 @@
+Closed forms
+============
+
+gas under a ceiling
+-------------------
+  Hydrostatic water, p_w(z) = p0 - rho g z, and negligible gas density
+  give a connected pool a flat interface at level L. A cell with
+  effective ceiling h_eff = h - ell is covered when L <= h_eff, with
+  pinning height ell = 2 gamma/(rho g r). Pool volume V = a^2 sum
+  (h_eff - L). Adding gas lowers L and admits the highest perimeter
+  cell (invasion percolation with threshold -h_eff); a perimeter cell
+  with a higher neighbor outside the pool is a spill point, from which
+  gas follows steepest ascent to another pool, and pools meeting at a
+  saddle merge. With every pool full, the covered set is the
+  priority-flood filling of -h_eff with outlets at the open ends.
+
+pool scale and dip
+------------------
+  Self-affine relief has S(r) = sigma1 r^H; a dip adds r tan(beta).
+  They balance at r* = (sigma1/tan beta)^(1/(1-H)). For H near 1 this
+  is very sensitive to the dip (power 5 at H = 0.8). The cutoff is
+  soft: a basin of width l needs a relief reversal larger than l
+  tan(beta), whose Gaussian probability is about
+  exp[-(l/r*)^(2(1-H))/2], a stretched exponential with exponent 0.4
+  at H = 0.8.
+
+  dip (deg) | r* sigma1=0.03 | 0.10 | 0.30 m   (H = 0.8)
+  --------------------------------------------------------
+          1 |         15 |   6.17e+03 |    1.5e+06
+          2 |      0.468 |        193 |   4.68e+04
+          3 |     0.0615 |       25.3 |   6.15e+03
+          5 |    0.00474 |       1.95 |        474
+          8 |   0.000443 |      0.182 |       44.3
+         12 |    5.6e-05 |      0.023 |        5.6
+         20 |    3.8e-06 |    0.00157 |       0.38
+
+pool area and volume
+--------------------
+  Below r*, a pool of width l has depth of order l^H, so V ~
+  A^((2+H)/2) across pools and A ~ V^(2/(2+H)) for gas fed from one
+  point: 0.800 for H = 0.5, 0.714 for H = 0.8.
+
+connected capillary limit
+-------------------------
+  Relief negligible against pinning: invasion percolation without
+  trapping (water under the ceiling stays connected to the water
+  column). Cluster dimension 91/48 = 1.8958, accepted thresholds
+  bounded by p_c = 0.592746 (square lattice, sites). A dip adds a
+  gradient G per site; the finger width scales as G^(-nu/(1+nu)) =
+  G^(-0.5714).
+
+silt detachment
+---------------
+  A contact line crossing a cell for the first time removes a fraction
+  phi_c of its loose silt. Gas volume v traveling along a path removes
+  1 - exp(-v/v_d) from each cell passed; the product over parcels
+  depends only on the total volume, so the result does not depend on
+  how breaths are split into parcels.
+
+settling and sight
+------------------
+  Stokes velocity w = (rho_s - rho) g d^2/(18 mu). Mean residence time
+  from a reflecting ceiling to an absorbing floor at depth H_p: T =
+  H_p/w - (K/w^2)(1 - exp(-w H_p/K)). Mass-specific beam attenuation
+  for grains much larger than the wavelength, b = 3/(rho_s d).
+  Black-target sighting range 4.8/c for uniform c (Zaneveld and Pegau
+  2003), applied here as the distance at which the path optical depth
+  reaches 4.8.
+
+  d (um) | T_residence exact (min), K = 1e-6, 1e-5, 1e-4
+  ----------------------------------------------------
+    1.00 |   19869.5,    3142.2,     331.3
+    2.00 |    7979.8,    2659.3,     325.5
+    4.00 |    2236.2,    1557.0,     303.5
+    8.00 |     574.2,     528.9,     235.2
+   16.00 |     144.5,     141.7,     113.7
+   32.00 |      36.2,      36.0,      34.2
+   64.00 |       9.0,       9.0,       8.9
+  128.00 |       2.3,       2.3,       2.3
+

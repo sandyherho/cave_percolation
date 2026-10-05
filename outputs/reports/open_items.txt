@@ -1,0 +1,51 @@
+Open items and negative results
+===============================
+
+a closed form that holds only as a scaling variable
+---------------------------------------------------
+  The pool scale r* = (sigma1/tan beta)^(1/(1-H)) was expected to act
+  as a sharp cutoff on pool size. It does not. An area-weighted pool
+  size varies with the dip much more weakly than r*, because the
+  cutoff is a soft stretched exponential and, for H = 0.8, pools of
+  ten times r* still form. The pooled area distribution collapses on
+  l/r* for H = 0.5 above about 1.5 r*; for H = 0.8 it does not
+  collapse within a 10 m domain. r* is reported as the scaling
+  variable, not as a size limit.
+
+two fitted exponents miss by a few percent
+------------------------------------------
+  Pool volume against area exceeds the closed-form exponent by 3 to 4
+  percent with intervals that exclude it; the likely cause is the
+  lattice cutoff of the relief (fitted H = 0.77 for input 0.8) acting
+  on the smallest pools. The point-source growth exponents agree
+  within their intervals.
+
+results that depend on unmeasured quantities
+--------------------------------------------
+  No measurement of loose silt inventory, contact-line stripping
+  efficiency, pinning radius, or relief statistics on a cave ceiling
+  is known to the authors. Silt masses scale with m0. Sighting ranges
+  change by an order of magnitude between K = 1e-6 and 1e-4 m^2/s. The
+  team-position ordering survives every combination tested; its
+  magnitude does not.
+
+what the model leaves out
+-------------------------
+  Gas is quasi-static: no bubble dynamics, no inertia at spill points,
+  no dissolution of trapped gas, no receding contact lines. The pinned
+  meniscus volume is neglected. Pools are disconnected fill-spill
+  pools; the connected capillary limit is a separate engine and the
+  crossover between the two is not modeled. Silt detached under a pool
+  is released to the water at once. The water column is
+  width-averaged, still apart from a constant eddy diffusivity, and
+  ignores fin wash, flocculation, and resuspension from the floor. A
+  closed-circuit rebreather exhales no gas in level swimming and
+  releases no silt here; loop venting on ascent is not modeled.
+
+what does not depend on those choices
+-------------------------------------
+  The equivalence of the fill-spill engine and priority flooding,
+  volume conservation, the percolation limits, and the scaling
+  exponents are properties of the geometry and hold for any silt,
+  optics, or diver parameters.
+
